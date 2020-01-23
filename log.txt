@@ -1,35 +1,36 @@
-Thu Nov 14 13:58:00 2019
+Thu Jan 23 12:23:14 2020
 Windows-8-6.2.9200
-Ren'Py 7.1.3.1092
+Ren'Py 7.3.5.606
  
 
 Bootstrap to the start of init.init took 0.06s
 Early init took 0.00s
-Loader init took 0.24s
-Loading error handling took 0.06s
-Loading script took 0.21s
-Loading save slot metadata. took 0.06s
+Loader init took 0.01s
+Loading error handling took 0.02s
+Loading script took 0.18s
+Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.12s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.00s
+Running init code took 0.58s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
-Dump and make backups. took 0.06s
+Backing up script files to 'C:\\Users\\preet\\AppData\\Roaming/RenPy/backups\\XO-KO-V2':
+Dump and make backups. took 0.09s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.01s
+Initial gc. took 0.02s
 DPI scale factor: 1.250000
 Creating interface object took 0.05s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.02s
+Save screen analysis took 0.08s
 Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.07s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.02s
@@ -40,8 +41,8 @@ Windowed mode.
 Screen sizes: virtual=(1280, 720) physical=(1449, 815) drawable=(1449, 815)
 Vendor: 'Intel'
 Renderer: 'Intel(R) HD Graphics 630'
-Version: '4.5.0 - Build 25.20.100.6374'
-Display Info: <Info({'blit_sw_CC': False, 'refresh_rate': 60, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 1080, 'current_w': 1920, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
+Version: '4.6.0 - Build 26.20.100.7262'
+Display Info: None
 Fixed-function is blacklisted.
 Extensions:
     GL_3DFX_texture_compression_FXT1
@@ -95,6 +96,7 @@ Extensions:
     GL_ARB_geometry_shader4
     GL_ARB_get_program_binary
     GL_ARB_get_texture_sub_image
+    GL_ARB_gl_spirv
     GL_ARB_gpu_shader5
     GL_ARB_gpu_shader_fp64
     GL_ARB_half_float_pixel
@@ -112,6 +114,7 @@ Extensions:
     GL_ARB_multitexture
     GL_ARB_occlusion_query
     GL_ARB_occlusion_query2
+    GL_ARB_pipeline_statistics_query
     GL_ARB_pixel_buffer_object
     GL_ARB_point_parameters
     GL_ARB_point_sprite
@@ -145,6 +148,7 @@ Extensions:
     GL_ARB_shading_language_420pack
     GL_ARB_shading_language_packing
     GL_ARB_shadow
+    GL_ARB_spirv_extensions
     GL_ARB_stencil_texturing
     GL_ARB_sync
     GL_ARB_tessellation_shader
@@ -162,6 +166,7 @@ Extensions:
     GL_ARB_texture_env_combine
     GL_ARB_texture_env_crossbar
     GL_ARB_texture_env_dot3
+    GL_ARB_texture_filter_anisotropic
     GL_ARB_texture_float
     GL_ARB_texture_gather
     GL_ARB_texture_mirror_clamp_to_edge
@@ -182,6 +187,7 @@ Extensions:
     GL_ARB_transform_feedback2
     GL_ARB_transform_feedback3
     GL_ARB_transform_feedback_instanced
+    GL_ARB_transform_feedback_overflow_query
     GL_ARB_transpose_matrix
     GL_ARB_uniform_buffer_object
     GL_ARB_vertex_array_bgra
@@ -257,6 +263,7 @@ Extensions:
     GL_KHR_blend_equation_advanced_coherent
     GL_KHR_context_flush_control
     GL_KHR_debug
+    GL_KHR_no_error
     GL_KHR_texture_compression_astc_hdr
     GL_KHR_texture_compression_astc_ldr
     GL_NV_blend_square
@@ -271,7 +278,9 @@ Extensions:
     WGL_EXT_swap_control
 Number of texture units: 8
 Using shader environment.
-Using copy RTT.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
 Using gl renderer.
 Texture testing:
 - Hardware max texture size: 16384
@@ -281,11 +290,31 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.52800011635s
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2.08800005913s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.016000 seconds.
-- Frame drawn at 0.033000 seconds.
-- Frame drawn at 0.057000 seconds.
-- Frame drawn at 0.099000 seconds.
-- 0.099000 seconds to render 5 frames.
+- Frame drawn at 0.017667 seconds.
+- Frame drawn at 0.087667 seconds.
+- Frame drawn at 0.097667 seconds.
+- Frame drawn at 0.165667 seconds.
+- 0.165667 seconds to render 5 frames.
+The window was minimized.
+The window was restored.
+
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1449, 815) drawable=(1449, 815)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+The window was minimized.
+The window was restored.
+
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1449, 815) drawable=(1449, 815)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
