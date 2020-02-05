@@ -15,6 +15,25 @@ define m = Character("Mikey")
 define d = Character("Dr. Love")
 define lady = Character("Lady at Booth")
 
+#Robin's gender is here.
+default Her = "Her"
+default her = "her"
+default She = "She"
+default she = "she"
+default Hers = "Hers"
+default hers = "hers"
+default Herself = "Herself"
+default herself = "herself"
+default w = "woman"
+
+#Variables that the game will use
+default have_experience = False
+
+#Stat variables are here.
+default power = 50
+default defense = 50
+default agility = 50
+default stamina = 50
 
 # The game starts here.
 
@@ -67,6 +86,7 @@ label start:
 
         "You took a brief taekwondo class in middle school.":
             "So you chose to attend SMAC to reignite your interest in martial arts."
+            $ have_experience = True
             jump continue1
 
 label continue1:
@@ -103,6 +123,31 @@ label continue1:
 
     if p == "":
         $ p = "Alex"
+
+    menu:
+        "What do you identify as?"
+        "Male":
+            $ w = "man"
+            $ Her = "Him"
+            $ her = "him"
+            $ Hers = "His"
+            $ hers = "his"
+            $ She = "He"
+            $ she = "he"
+            $ Herself = "Himself"
+            $ herself = "himself"
+        "Female":
+            pass
+        "Non-binary":
+            $ w = "non-binary person"
+            $ Her = "Them"
+            $ her = "them"
+            $ She = "They"
+            $ she = "they"
+            $ Hers = "Theirs"
+            $ her = "theirs"
+            $ Herself = "Themself"
+            $ herself = "themself"
 
     lady "Nice to meet you, %(p)s!" #you can delete this whenever
 
@@ -195,7 +240,7 @@ label meetboxer:
 
     "her nose is crooked, and her cold eyes are sunken deep into her skull, but you somehow find her absolutely stunning."
 
-    "She then rears back for a final blow and she- {b}HOOKS the dummy's head clean off into your direction, the head rolls to a stop at your feet.{/b}"
+    "She then rears back for a final blow and she- {b}HOOKS{/b} the dummy's head clean off into your direction, the head rolls to a stop at your feet.{/b}"
 
     "Shocked and somewhat flustered, you begin backing out of the room, tripping on some chairs."
 
@@ -203,7 +248,7 @@ label meetboxer:
 
     "You get the message and decide that you've done enough exploring for the day and make your way over to the auditorium."
 
-    r "The game is over."
+    jump orientation
 
     return
 
@@ -213,8 +258,7 @@ label turnaround:
 
     "You decide that you've done enough exploring for the day and head over to the auditorium."
 
-
-    r "The game is over."
+    jump orientation
 
     return
 
@@ -223,8 +267,139 @@ label turnaround:
 
 label beapath:
 
-    r "The game is over."
+    "The campus was pretty much seperated into 6 different buildings: The Octogon is the main building where you came in from - "
+
+    "in it are most of the 1st year classes as well as some offices and the auditorium, Leg Hall 1 and 2, which were two buildings on either side of"
+
+    "The Oct which are first year dorms, Arms 1 and 2 which are year 2 and 3 dorms, and Lee Hall, which is reserved for Elite students and staff members."
+
+    "It takes you maybe fifteen minutes to find your room, but you finally make it."
+
+    "You see other students moving into rooms next to yours, none of them really pay attention to you- they're all busy saying goodbye to their parents or lugging boxes of belongings to even make eye contact."
+
+    "One girl, however, smiles at you as you arrive at your door."
+
+    "She walks towards the door next to yours, rolling a pink luggage with all sorts of cartoon pins and buttons attached."
+
+    "She is wearing an oversized Konnichiwa Cat sweater."
+
+    "You catch yourself thinking she looks too cute for a fighting school, but you ignore the thought as she approaches you."
+
+    b "Hi there! I'm Bea, nice to meet ya!"
+
+    "She smiles and extends a hand."
+
+    p "Hey, my name's  %(p)s, nice to meet you!"
+
+    b " %(p)s, huh...I'm gonna have to remember that when I'm kicking your ass!"
+
+    "She laughs."
+
+    "You laugh awkwardly as well."
+
+    b "Looks like we're gonna be neighbors."
+
+    b "I'll try not to be too rowdy at night."
+
+    b "See ya later!"
+
+    "She pats you on the shoulder and walks into her room."
+
+    p "{i}What was that? {/i}"
+
+    "You shrug it off and proceed into your room as well."
+
+    "You walk in to see the average college dorm setup - one big room with 2 desks, chairs, and a bed on the side of a window."
+
+    "It looks like someone has already taken one of the sides of the room."
+
+    "Whoever they were, it seems like this was their dream school because the entire side was covered floor to ceiling with karate gear."
+
+    "The whole wall was plastered with classic kung-fu movie posters, tournament trophies, and a display of all their belts earned in karate encased behind the glass."
+
+    p "I hope I won't have to fight against them..."
+
+    "You looked over to your corner where the helpers have dropped off all your boxes and your car keys."
+
+    "You organized your side of the room."
+
+    "Once you finished, you checked your watch."
+
+    p "Time for orientation."
+
+    "You put on your SMAC t-shirt and headed out to find the auditorium."
+
+    jump orientation
+
+
+
+label orientation:
+
+    "You walked to the Octogon and saw a crowd of helpers and students walking into the auditorium."
+
+    "You made your way through the double doors."
+
+    "Instead of the traditional school assembly arrangement, the Octogon had no chairs, no stage, and no podium."
+
+    "It was just a large gymnasium styled room with a fighting ring in the middle."
+
+    "On either side of the ring bleachers lined the walls, filled with noisy students."
+
+    "You looked around for a space to sit when someone in the crowd waved in your direction."
+
+    r "Hey!"
+
+    "A young [w] in a full karate gi yelled across the gym and called you over."
+
+    r "Hey, %(p)s, it's been so long!"
+
+    if have_experience == False:
+            r "We had 7th grade PE together! You don't remember me?"
+
+            "{i}That was at least 10 years ago, how's anyone suposed to remember anything from middle school? {/i}"
+
+            p "I'm sorry...I don't remember. My memory's pretty bad..."
+
+            "[She] frowned a bit, but smiled and slapped you on the back."
+
+            r "No worries, that was forever ago."
+
+            r "My name's Robin, and don't you forget it!"
+
+            p "Nice to meet you too."
+
+            "You shake [her] hand as the squeal of a microphone's feedback cuts through the chatter."
+
+
+    else:
+
+            r "We took taekwondo together back in middle school."
+
+            "You vaguely remembered sparring with them but you didn't stay in the class for too long."
+
+            p "Master Kim's right?"
+
+            "Back then, the studio was a front for Master Kim's underground MMA fights."
+
+            r "Yeah!"
+
+            r "He was a great Sa Bum, but he was a bit wild."
+
+            r "Wanna sit together?"
+
+            p "Sure!"
+
+            "You sit with Robin as the squeal of a microphone cuts through the chatter."
+
+
+    "An extremely tall, unbelievably muscular bald man in a SMAC polo shirt taps on a mic and paces as he addresses the room."
+
+
+
+
+
 
     # This ends the game.
+    r "The game is over."
 
     return

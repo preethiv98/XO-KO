@@ -1,32 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 94, in script
-    "You're guided by a line of signs reading /"New Students Entry"/ and"
-  File "renpy/common/00library.rpy", line 268, in say
-    who(what, interact=interact, *args, **kwargs)
-Exception: Say has image attributes (u'New', u'Students', u'Entry'), but there's no image tag associated with the speaking character.
+  File "game/script.rpy", line 350, in script
+    if(have_experience == False):
+  File "game/script.rpy", line 350, in <module>
+    if(have_experience == False):
+NameError: name 'have_experience' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 94, in script
-    "You're guided by a line of signs reading /"New Students Entry"/ and"
-  File "D:\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\renpy-7.3.5-sdk\renpy\exports.py", line 1343, in say
-    renpy.store.say(who, what, *args, **kwargs)
-  File "renpy/common/00library.rpy", line 268, in say
-    who(what, interact=interact, *args, **kwargs)
-  File "D:\renpy-7.3.5-sdk\renpy\character.py", line 1073, in __call__
-    old_attr_state = self.handle_say_attributes(False, interact)
-  File "D:\renpy-7.3.5-sdk\renpy\character.py", line 942, in handle_say_attributes
-    if self.resolve_say_attributes(predicting, attrs):
-  File "D:\renpy-7.3.5-sdk\renpy\character.py", line 868, in resolve_say_attributes
-    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
-Exception: Say has image attributes (u'New', u'Students', u'Entry'), but there's no image tag associated with the speaking character.
+  File "game/script.rpy", line 350, in script
+    if(have_experience == False):
+  File "D:\renpy-7.3.5-sdk\renpy\ast.py", line 1832, in execute
+    if renpy.python.py_eval(condition):
+  File "D:\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 350, in <module>
+    if(have_experience == False):
+NameError: name 'have_experience' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 XO KO 1.0
-Wed Jan 22 16:36:50 2020
+Wed Feb 05 03:03:47 2020
