@@ -14,13 +14,14 @@ define p = Character("Paul")
 define m = Character("Mikey")
 define d = Character("Doctor Love")
 define lady = Character("Lady at Booth")
-define m = Character("Man")
+define ma = Character("Man")
 define dj = Character("The President")
 define st = Character("Staff")
 define u = Character("Unknown")
 define n = Character("Nurse")
-define m = Character("Minutus")
+define mi = Character("Minutus")
 define pr = Character("Professor")
+define c = Character("Cafeteria Lady")
 
 #Robin's gender is here.
 default Her = "Her"
@@ -35,6 +36,7 @@ default w = "woman"
 
 #Variables that the game will use
 default have_experience = False
+default food = "default"
 
 #Stat variables are here.
 default power = 50
@@ -401,7 +403,7 @@ label orientation:
 
     "An extremely tall, unbelievably muscular bald man in a SMAC polo shirt taps on a mic and paces as he addresses the room."
 
-    m "Welcome! Class of 20XX!"
+    ma "Welcome! Class of 20XX!"
 
     "A roaring applause bursts as the man flexes."
 
@@ -411,7 +413,7 @@ label orientation:
 
     "He flexes again, and you swear you see a couple of buttons fly off his shirt."
 
-    fd "As many of you know, physical fitness and martial arts is something I hold near and dear to my heart."
+    dj "As many of you know, physical fitness and martial arts is something I hold near and dear to my heart."
 
     dj "As I had somewhat of a turbulent upbringing, I always found comfort and joy in what I was most passionate about: wrestling."
 
@@ -473,9 +475,9 @@ label orientation:
 
     st "No weapons!"
 
-    "Robin yelsps and drops the nunchucks, blushing furiously."
+    "Robin yelps and drops the nunchucks, blushing furiously."
 
-    "Not too far off, you recognize Bea chocking out a kid at least three times her size."
+    "Not too far off, you recognize Bea choking out a kid at least three times her size."
 
     "She gives you a friendly smile as the kid in her hold goes blue."
 
@@ -485,13 +487,13 @@ label orientation:
 
     "All of a sudden, you are pushed into the center of the ring where some students are engaged in a five-man battle, exchanging blows."
 
-    "While you try to make your way out of the fray, you manage to blocka couple of potshots the mob tries to throw at you-"
+    "While you try to make your way out of the fray, you manage to block a couple of potshots the mob tries to throw at you-"
 
     "{b}BAM!{/b}"
 
     "You're stunned by a rabbit punch to the back of you head, right underneath your neck."
 
-    "Your vision blurs as you stumble on your feet and all you see is a humanoid shape unleasing a roundhouse kick to your face."
+    "Your vision blurs as you stumble on your feet and all you see is a humanoid shape unleashing a roundhouse kick to your face."
 
     "You black out instantly and the last thing you remember is a pair of strong hands tugging on your shoulders gently as you are lifted onto a stretcher and wheeled away."
 
@@ -615,11 +617,11 @@ label orientation:
 
     "The professor stands a ta desk just off the side of the ring, typing away on a laptop, ignoring the chatter."
 
-    "SItting across the room, you see Miguel, Bea, and Robin talking to each other."
+    "Sitting across the room, you see Miguel, Bea, and Robin talking to each other."
 
     "You sheepishly walk over to the group, hopign they won't give you a hard time after you were embarassingly disqualified at Orientation."
 
-    r "Enter the Wyvern is 100% better than Kill Phil."
+    r "Enter the Wyvern is 100\% better than Kill Phil."
 
     m "Are you seriously comparing those two movies? You're comparing apples to, like, gummy bears. They're totally different genres."
 
@@ -679,39 +681,322 @@ label orientation:
 
     pr "My name is Professor Minutus, just call me Min."
 
-    m "I graduated from ehere in 200X, did MMA for six years, and was a person trainer for abotu three."
+    mi "I graduated from here in 200X, did MMA for six years, and was a person trainer for about three."
 
-    m "I'm not like other professors, I don't like to hand out a syllabus or anything like that."
+    mi "I'm not like the other professors, I don't like to hand out a syllabus or anything like that."
 
-    m "Just a few simple rules: "
+    mi "Just a few simple rules: "
 
-    m "No. Weapons."
+    mi "No. Weapons."
 
-    m "No. Maiming."
+    mi "No. Maiming."
 
-    m "No. Babies."
+    mi "No. Babies."
 
     "He peers at the four of you, and his eyes look at Mikey."
 
-    m "You, with the nunchucks, come up here."
+    mi "You, with the nunchucks, come up here."
 
-    m "I wanna show you something."
+    mi "I wanna show you something."
+
+    "You hear a few students murmur and go \"OOOOOOOOO\" as Mikey makes his way to the front of the class, glaring at Robin."
+
+    mi "Alright calm down, calm down."
+
+    mi "Now."
+
+    mi "I wanna show you guys the basics of defense, and how using your opponent's weight and momentum against htem is key to winning a fight."
+
+    mi "Alright, come at me with those nunchucks."
+
+    m "Sir-those aren't mine-,"
+
+    mi "I said come at me!"
+
+    "Mikey charges Professor Min, nunchucks swining, and in a flash, he is disarmed and pinned to the ground almost immediately."
+
+    "The Professor holds Mikey's arm in a way that looks unnatural against his crumpled body."
+
+    mi "You see, that's how you disarm someone with a weapon."
+
+    mi "The human body is the ONLY weapon you need."
+
+    mi "Now if he were perhaps some VAGRANT on the street trying to get my goods, I would probably have broken their arms like THIS."
+
+    "The class collectively gasps as the Professor gently tugs on Mikey's arm."
+
+    mi "But, that's not what we're here to learn."
+
+    mi "Are you in any pain right now, kid?"
+
+    m "No, sir."
+
+    mi "Right."
+
+    "He lets Mikey get up. He stretches his arms and legs a bit."
+
+    mi "Go ahead and take a seat again kid, thank you."
+
+    "Mikey goes back to his seat and the Professor puts the nunchucks in his desk drawer."
+
+    r "I'm sorry."
+
+    m "I hate you."
+
+    "Mikey sits down."
+
+    mi "Now, as I was saying."
+
+    mi "Since most of the fights you'll be getting into here at SMAC will be against other students, in an effort to mitigate serious injuries, we're here to learn how to defend yourself in a manner that causes minimal harm to your attacker."
+
+    mi "That clear?"
+
+    "The class agrees in unison, and Professor Min stands up and claps his hands together."
+
+    mi "Alright. Let's start."
+
+    "After a pretty intense session, the class is let out, and you meet with Bea, Robin, and Mikey again."
+
+    m "Hey, %(p)s, wanna have lunch together?"
+
+    menu:
+        "Sit with them.":
+            jump sit
+        "Skip out on lunch.":
+            jump skip
+
+label sit:
+
+    p "Sure!"
+
+    "You all walk towards the cafeteria."
+
+    "It is around 11:30 now and both students and professors are flooding the dining courtyard."
+
+    "There are seats all over a circular pavilion with a huge awning shielding everyone from the August sun."
+
+    "Rows of benches are filled with people chatting and eating."
+
+    "You make out a group of students half dressed in wrestlign gear armwrestling each other."
+
+    "All over the perimeter of the courtyard you can see several booths."
+
+    "There is a salad bar stacked with different greens, toppings, and other veggies on one end of the courtyard, a cereal bar, a sandwich making station, a dessert table, a fruit stand, and a couple of booths where they serve hot foods."
+
+    "You all decide to walk towards one of the hot food booths, grab trays, and line up behind a couple of students."
+
+    r "Man I'm starving!"
+
+    r "Professor Min really didn't pull any punches for our first lesson, huh?"
+
+    "Robin bounces as you all take a couple of steps forward in line."
+
+    m "Yeah, no kidding."
+
+    "Robin chuckles and scratches the back of Mikey's head."
+
+    r "Heh, sorry Mike. I didn't think he'd end up bringing you in front of the whole class like that."
+
+    r "That musta been hella embarrassing."
+
+    r "I'm really sorry about that."
+
+    r "I can get you some extra pizza to make up for it."
+
+    "Mikey pats Robin on the shoulder."
+
+    m "Eh, don't worry about it bud."
+
+    m "Besides, it was kinda funn.y"
+
+    m "I'm gonna take you up on that pizza though, I could eat a whole pie right about now!"
+
+    b "Awww, ain't y'all a pair?"
+
+    b "Hey, %(p)s, what do you think you'll have?"
+
+    menu:
+        "Pizza":
+            $ food = "pizza"
+        "Steak":
+            $ food = "steak"
+        "Tofu Stir Fry":
+            $ food = "tofu stir fry"
+        "Grilled Salmon":
+            $ food = "grilled salmon"
+
+    p "Uh, I think I'll have some %(food)s."
+
+    r "Yeah! Mee too. Aw man, I can hardly wait!"
+
+    "Robin jumps as you all approach the muscular looking cafeteria lady."
+
+    c "Hi babies, what can I get you?"
+
+    r "Hi lady! Can I get two- no - three steaks, and a salad?"
+
+    "Robin points at each item through the sneeze guard."
+
+    "Mikey clears his throat."
+
+    r "Oh, and two slices of pizza for my friend here."
+
+    c "Here you go baby. Next?"
+
+    m "Just some tofu for me ma'am."
+
+    # c "Good. You look like you could lose some weight."
+
+    c "Alrighty. Whatchu want baby?"
+
+    b "I'll have the salmon miss, thank you."
+
+    c "And you, baby?"
+
+    p "Some %(food)s please."
+
+    "You hand the lunch lady your tray as she gives you a decent sized portion."
+
+    c "Salad and fruits are over there babies. See you later."
+
+    "The lunch lady waves you off as more students line up in front of her."
+
+    "You all walk around the courtyard grabbing just a bit of everything from each station."
+
+    "Robin loads [her] tray with tons of proteins and veggies, Mikey raids the vegetarian items, and Bea gets a healthy mix of everything."
+
+    "Once everyone's made their rounds, you guys find an empty bench and dig in."
+
+    b "Ugh...I shouldn'ta had that second ice cream sandwich."
+
+    r "Yeah, I think I'm gonna- I think I might start mooing if I have another bite of this steak..."
+
+    "Robin unravels [her] black belt a bit."
+
+    m "It's almost 1 o'clock. What class you guys got next?"
+
+    "You pull out and scan your class schedule."
+
+    p "Power and How to Control Your Inner Deamon...?"
+
+    b "Oh, me too!"
+
+    r "Yeah, same."
+
+    m "Really? I guess that makes all of us. Lets head on over."
+
+    "Mikey gets up and grabs everyone's trays and throws them out for you."
+
+    "After Mikey catches up with you, you all walk back into the freshman building towards your next class."
+
+    jump power
 
 
+label skip:
 
+    p "Nah, I'm not really hungry."
 
+    p "I'll catch up with you guys later."
 
+    "Mikey, Robin, and Bea all walk towards the cafeteria, while you decide to explore around campus some more."
 
+    "Maybe it's the leftover adrenaline from your previous class's drills, but something draws you towards one of the gyms near the freshman dorms."
 
+    "You walk into the gym to see that it's completely empty."
 
+    "You're astonished by just how well equipped the gym is."
 
+    "It has weight lifting machines and other training equipment."
 
+    "You know that there are around 5 gyms around campus, not counting the ones in classrooms, and wonder if those are as stacked as this one."
 
+    "You look around at the couple rows of treadmills, exercise bikes, and free weights."
 
+    p "I guess THIS is where my tuition's going."
 
+    "You analyze which machine you'll use."
 
+    menu:
+        "Go for a run":
+            jump treadmill
+        "Pump some iron":
+            jump weights
+        "Work on your downward dog":
+            jump yoga
 
+label treadmill:
 
+    "You hop onto one of the treadmills just to get your blood pumping a bit."
+
+    "You put the settings to Quick Start and begin jogging at a light pace."
+
+    "You've done a lot of jogging over the summer in preparation for this semester, so you're able to pace yourself quite well."
+
+    "Just as you begin working up a bit of a sweat, some guy walks in and locks eyes with you."
+
+    "You quickly turn your head and continue running."
+
+    "The treadmill picks up speed a little bit and you're now running at a moderate pace as the guy walks behind you and gets on the treadmill."
+
+    "RIGHT. NEXT. TO. YOU."
+
+    "You decide you won't let this guy ruin your workout and let it slide."
+
+    "You continue running, trying to ignore hims tretchign and groaning excessively loud in the corner of your vision."
+
+    "You hear the guy press a couple of buttons on his machine and begin jogging."
+
+    "You're finally able to get a good look at him now that he's no longer behind you and you see his golden-brown locks bouncing up and down off his strong shoulers with every stride."
+
+    "His face peeks in and out from beneath his hair and from what you can see, he's not bad looking."
+
+    "As he picks up speed and begins to sweat, he undoes a couple of buttons on his white button down shirt revealing his well defined chest."
+
+    "You're not sure if you should feel aroused or threatened by his presence, but you're considering the latter because of how he's dressed."
+
+    "Only psychopaths wear slacks and boat shoes while running."
+
+    "As you look back up to his face, he is staring DIRECTLY at you."
+
+    "At first you were a little paranoid about him deciding to run right next to you, but now you know this guy is a freak."
+
+    "You try your very best to finish up your workout, but after a few minutes of running, he taps you on the shoulder."
+
+    if w == "man" and w == "non-binary":
+
+        u "Your muscles, they excite me."
+
+        u "Would you like me to feel them?"
+
+    else:
+
+        u "I like a woman with nice curves."
+
+    "He says this with a disgusting smile on his face."
+
+    "Visibly creeped out, you smile awkwardly at the douchebag."
+
+    "You pressed the stop button intensely and leave the gym."
+
+    jump weird
+
+label weights:
+
+    "You decide to grab a couple of dumbbells and just do some bicep "
+
+    # This ends the game.
+    r "The game is over."
+
+    return
+
+label weird:
+
+    # This ends the game.
+    r "The game is over."
+
+    return
+
+label power:
 
     # This ends the game.
     r "The game is over."
