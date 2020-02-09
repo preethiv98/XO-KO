@@ -12,8 +12,15 @@ define b = Character("Bea")
 define j = Character("Julia")
 define p = Character("Paul")
 define m = Character("Mikey")
-define d = Character("Dr. Love")
+define d = Character("Doctor Love")
 define lady = Character("Lady at Booth")
+define m = Character("Man")
+define dj = Character("The President")
+define st = Character("Staff")
+define u = Character("Unknown")
+define n = Character("Nurse")
+define m = Character("Minutus")
+define pr = Character("Professor")
 
 #Robin's gender is here.
 default Her = "Her"
@@ -49,7 +56,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show text "Prologue" with Pause(1.5)
+    show text "Prologue" with Pause(4.5)
 
     scene black with dissolve
 
@@ -393,6 +400,313 @@ label orientation:
 
 
     "An extremely tall, unbelievably muscular bald man in a SMAC polo shirt taps on a mic and paces as he addresses the room."
+
+    m "Welcome! Class of 20XX!"
+
+    "A roaring applause bursts as the man flexes."
+
+    "The undersized polo shirt he is wearing almost shreads to pieces as he poses."
+
+    dj "Hello students! I am Drew Jackson, your president and founder of the School for Martial Arts and Combat."
+
+    "He flexes again, and you swear you see a couple of buttons fly off his shirt."
+
+    fd "As many of you know, physical fitness and martial arts is something I hold near and dear to my heart."
+
+    dj "As I had somewhat of a turbulent upbringing, I always found comfort and joy in what I was most passionate about: wrestling."
+
+    dj "No matter what I was going through, being in the ring always gave me the motivation to work hard and improve myself physically and mentally."
+
+    dj "And that's why it is with great honor that I can pass on that passion and the drive to want to be the best onto all of you in this room."
+
+    "The room breaks into an uproar again, and Robin hollers along with the crowd."
+
+    dj "You have survived the audition process and, hopefully, you have been conditioning your bodies for the upcoming semester."
+
+    dj "Now we will test if you have what it takes to continue your education!"
+
+    dj "We will now seperate you all into groups of twenty, which will be a fight to the death, Bloodsport style!"
+
+    "The silence is deafening."
+
+    "You immediately swall an avacado sized gulp."
+
+    dj "Just kidding, of course!"
+
+    dj "You will be sparring amonst your peers as a way to assess your skills and help plan your coursework accordingly."
+
+    dj "Some will do better than others, and there have been extreme injuries in the past - so please be wary."
+
+    dj "In any case - the first group will be: "
+
+    dj "Miguel Santos."
+
+    dj "Robin De Santa."
+
+    dj "Beatrix Washington."
+
+    dj "and %(p)s."
+
+    "You, Robin, and a few other students begin making their way to the center ring as some helpers hand you some gear."
+
+    "The President beigns explaning the rules but the sound of your heartbeat drowns out all the noise."
+
+    dj "With that being said, best of luck to you all, and let the Class of 20XX Royale begin!"
+
+    "Your fight or flight instincts kick in and you immediately begin bouncing around on your feet and blockign your face."
+
+    "It's absolute insanity in the ring; most of your oppenents battle in the center of the stage in a sort of mosh pit - you decide to stray far away from them."
+
+    "On the other side of the ring you recognize Miguel as he lassos one opponent running at him and suplexes another."
+
+    "You hear two bells ding as the two students are dragged off the mat towards the hospital wing."
+
+    "You make your way to the opposite side of the ring."
+
+    "Over here, you see Robin blocking and parryign attacks from five different opponents."
+
+    "They pull a pair of nunchucks and start beating several people over their heads."
+
+    "They go flying out of the ring like a kung fu movie."
+
+    "Five more dings go off."
+
+    st "No weapons!"
+
+    "Robin yelsps and drops the nunchucks, blushing furiously."
+
+    "Not too far off, you recognize Bea chocking out a kid at least three times her size."
+
+    "She gives you a friendly smile as the kid in her hold goes blue."
+
+    "The refs whistle as the medics drag him off."
+
+    "She then quickly gets up, double legs another opponent and begins to pin him down to the ground."
+
+    "All of a sudden, you are pushed into the center of the ring where some students are engaged in a five-man battle, exchanging blows."
+
+    "While you try to make your way out of the fray, you manage to blocka couple of potshots the mob tries to throw at you-"
+
+    "{b}BAM!{/b}"
+
+    "You're stunned by a rabbit punch to the back of you head, right underneath your neck."
+
+    "Your vision blurs as you stumble on your feet and all you see is a humanoid shape unleasing a roundhouse kick to your face."
+
+    "You black out instantly and the last thing you remember is a pair of strong hands tugging on your shoulders gently as you are lifted onto a stretcher and wheeled away."
+
+    scene black with dissolve
+
+    show text "End Prologue" with Pause(4.5)
+
+    scene black with dissolve
+
+    show text "Chapter One" with Pause(4.5)
+
+    scene black with dissolve
+
+    show text "Day One" with Pause (4.5)
+
+    scene black with dissolve
+
+    scene Day One
+
+    "You wake up in a cold room."
+
+    "You are covered in fluffy, yet scratchy blankets in a hospital cot."
+
+    p "W-where am I?"
+
+    n "You got wrecked pretty hard."
+
+    "An older student with green eyes stands over you to make sure you've come to."
+
+    "He has a clipboard and pen in hand."
+
+    "He checks something off as he examines you for a minute."
+
+    "He clicks the pen closed and places it in his long brown hair tucked into a loose bun."
+
+    n "It wasn't that bad was it?"
+
+    "Your cheeks go red from embarrassment."
+
+    p "Not really, but it was pretty pathetic."
+
+    "He gives a teasing, toothy smile."
+
+    n "Don't take it personally though Champ, I've seen worse."
+
+    "He points to several other people in the cots next to you."
+
+    "Some of them have black eyes and chipped teeth."
+
+    n "You didn't even injure your head that bad. No concussion or anything, but we kept you overnight just to be sure. We take head injuries seriously here."
+
+    p "Overnight? What time is it? I'm late for class!"
+
+    "You begin to get up but the nurse pushes you back down."
+
+    n "Relaaaax. It's only 8:25."
+
+    "He presses a couple of buttons on a screen."
+
+    n "See, your first class doesn't start until 9."
+
+    "You sink back into the bed a bit."
+
+    n "Let me just finish up your record and I'll wheel you over in no time!"
+
+    p "Wheel me over? I feel fine. I can just walk, it's no biggie."
+
+    "You object, not wanting to inconvience him further."
+
+    n "No can do Champ, it's hospital policy."
+
+    n "Anyone who comes in through those doors, can only leave at the price of their legs!"
+
+    n "Just kidding...It's just so that we'ere not resposible if one of you dumbasses slips and falls on the way out of here."
+
+    n "Besides, your class is right around the corner."
+
+    n "I'll be right back with a chair, your stuff is on the table next to you."
+
+    "The nurse comes back with the wheelchair the color of his scrubs."
+
+    n "All aboard....{b}THE LOVE TRAIN!{b}"
+
+    p "The...'Love Train'?"
+
+    "Your face flushes again."
+
+    "The nurse's face also turns red."
+
+    n "I uh...sorry. It's uh, Love, Doctor Love."
+
+    p "So you're a nurse named...Doctor?"
+
+    d "Yea I get that a lot...My parents were kinda weird like that."
+
+    d "Would you believe me if I told you my brother's name is Lawyer?"
+
+    p "Is he...a lawyer?"
+
+    d "Uh...no. He's a garbage man. Hope on!"
+
+    "You take a seat on the wheelchair, and Doctor Love rolls you out the double doors past a few rows of battle scarred students."
+
+    "After a few twists and turns down some hallways, you make it to your classroom in no time."
+
+    d "Alright, here we are, Defense 101."
+
+    "Dr. Love opens the door for you."
+
+    p "Thanks."
+
+    d "No problem."
+
+    "He pulls you aside a bit."
+
+    d "If you ever need anything, feel free to stop by The Heart anytime. Hopefully under less...critical circumstances."
+
+    "He winks and waves at you as you walk into class."
+
+    "You see several students already standing around and chatting idly."
+
+    "The professor stands a ta desk just off the side of the ring, typing away on a laptop, ignoring the chatter."
+
+    "SItting across the room, you see Miguel, Bea, and Robin talking to each other."
+
+    "You sheepishly walk over to the group, hopign they won't give you a hard time after you were embarassingly disqualified at Orientation."
+
+    r "Enter the Wyvern is 100% better than Kill Phil."
+
+    m "Are you seriously comparing those two movies? You're comparing apples to, like, gummy bears. They're totally different genres."
+
+    r "Both are fighting movies. Ruth Lee's form and technique is SO much better than Irma Theremin's."
+
+    m "Dude, what are you even arguing? Kill Phil is practically a comedy."
+
+    r "Either way I'm right."
+
+    b "You're BOTH wrong, My Ninja High School is WAY better than either of those."
+
+    r "Yea that's true."
+
+    m "For sure."
+
+    r "Hey, %(p)s! Are you alright?"
+
+    p "Yep, all good. It really wasn't that bad..."
+
+    if have_experience == False:
+
+        r "Yea...you were four spots ahead of last place. Pretty bad, but I'm sure there's room for improvement, right?"
+
+        "You sigh."
+
+    else:
+
+        r "Hey, at least you made it right? Top 10. Not bad."
+
+    r "Oh, this is Bea and Mikey, if you didn't know already."
+
+    p "Yea, we met...Kinda. What place did you guys get?"
+
+    m "Fourth!"
+
+    r "Second."
+
+    "Bea smiles and holds up her index finger."
+
+    r "Argh! I would have taken the gold if they didn't disqualify me for using my nunchucks!"
+
+    b "It's a martial arts fight, weapons are il-le-gal."
+
+    r "But nunchucks are martial weapons, mar-tial!"
+
+    b "Whatever, I still woulda beat your ass."
+
+    "Robin pulls out [her] nunchucks and starts running towards Bea."
+
+    "Mikey stops them and takes the nunchucks away just as the professor finally looks up from his laptop."
+
+    pr "Alright guys...Listen up...Listen up, listen up."
+
+    pr "First day of class."
+
+    pr "Just want to lay out the groundwork."
+
+    pr "My name is Professor Minutus, just call me Min."
+
+    m "I graduated from ehere in 200X, did MMA for six years, and was a person trainer for abotu three."
+
+    m "I'm not like other professors, I don't like to hand out a syllabus or anything like that."
+
+    m "Just a few simple rules: "
+
+    m "No. Weapons."
+
+    m "No. Maiming."
+
+    m "No. Babies."
+
+    "He peers at the four of you, and his eyes look at Mikey."
+
+    m "You, with the nunchucks, come up here."
+
+    m "I wanna show you something."
+
+
+
+
+
+
+
+
+
+
+
 
 
 
