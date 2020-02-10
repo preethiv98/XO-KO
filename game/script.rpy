@@ -19,9 +19,10 @@ define dj = Character("The President")
 define st = Character("Staff")
 define u = Character("Unknown")
 define n = Character("Nurse")
-define mi = Character("Minutus")
+define mi = Character("Min")
 define pr = Character("Professor")
 define c = Character("Cafeteria Lady")
+define w = Character("Willy")
 
 #Robin's gender is here.
 default Her = "Her"
@@ -32,7 +33,8 @@ default Hers = "Hers"
 default hers = "hers"
 default Herself = "Herself"
 default herself = "herself"
-default w = "woman"
+default woman = "woman"
+default sister = "sister"
 
 #Variables that the game will use
 default have_experience = False
@@ -58,7 +60,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show text "Prologue" with Pause(4.5)
+    show text "Prologue" with Pause(3.5)
 
     scene black with dissolve
 
@@ -145,6 +147,7 @@ label continue1:
             $ she = "he"
             $ Herself = "Himself"
             $ herself = "himself"
+            $ sister = "brother"
         "Female":
             pass
         "Non-binary":
@@ -157,6 +160,7 @@ label continue1:
             $ her = "theirs"
             $ Herself = "Themself"
             $ herself = "themself"
+            $ sister = "sibling"
 
     lady "Nice to meet you, %(p)s!" #you can delete this whenever
 
@@ -249,7 +253,7 @@ label meetboxer:
 
     "her nose is crooked, and her cold eyes are sunken deep into her skull, but you somehow find her absolutely stunning."
 
-    "She then rears back for a final blow and she- {b}HOOKS{/b} the dummy's head clean off into your direction, the head rolls to a stop at your feet.{/b}"
+    "She then rears back for a final blow and she- {b}HOOKS{/b} the dummy's head clean off into your direction, the head rolls to a stop at your feet."
 
     "Shocked and somewhat flustered, you begin backing out of the room, tripping on some chairs."
 
@@ -358,7 +362,7 @@ label orientation:
 
     r "Hey!"
 
-    "A young [w] in a full karate gi yelled across the gym and called you over."
+    "A young [woman] in a full karate gi yelled across the gym and called you over."
 
     r "Hey, %(p)s, it's been so long!"
 
@@ -499,15 +503,15 @@ label orientation:
 
     scene black with dissolve
 
-    show text "End Prologue" with Pause(4.5)
+    show text "End Prologue" with Pause(3.5)
 
     scene black with dissolve
 
-    show text "Chapter One" with Pause(4.5)
+    show text "Chapter One" with Pause(3.5)
 
     scene black with dissolve
 
-    show text "Day One" with Pause (4.5)
+    show text "Day One" with Pause (3.5)
 
     scene black with dissolve
 
@@ -982,23 +986,352 @@ label treadmill:
 
 label weights:
 
-    "You decide to grab a couple of dumbbells and just do some bicep "
+    "You decide to grab a couple of dumbbells and just do some bicep curls."
 
-    # This ends the game.
-    r "The game is over."
+    "You look at the mirror and flex."
 
-    return
+    "Just as you start your first set, a guy wearing a button down shirt, slacks, and boat shoes walks in, winks at you, and makes his way towards a squat rack."
+
+    "Suddenly, the guy takes off his shirt, revealing his stunning torso."
+
+    "You continue lifting weights, trying not to stare at his abs. After watching him stretch a bit, you see him start undoing his pants."
+
+    "{i}Oh god, what the-{/i}"
+
+    "It turns out the guy wears gym shorts under his dress pants. You're relived at this sight."
+
+    "Finally, the guy sets his weights and squats."
+
+    "You're thoroughly impressed that his physique isn't just for show - he starts squatting around 200 pounds almost effortlessly."
+
+    "Realizing you've been distracted for too long, you return to your lifting."
+
+    "As you're finishing up your set, you look back up at the guy and see him looking right in the eyes as he squats."
+
+    "Each lift, his grunts keep getting louder and louder, his shoulders now glistening with sweat, and his gaze never leaving you."
+
+    u "You like what you see?"
+
+    "He flexes his thigh muscles, making them dance in a grotesque way."
+
+    u "You want to get like me?"
+
+    "Disgusted, you throw your weights to the ground and stomp angrily out of the gym."
+
+    jump weird
+
+label yoga:
+
+    "You decide that after an eventful morning, you need to clear your mind a bit and grab a yoga mat."
+
+    "You roll the mat out onto the ground and begin going through some poses."
+
+    "You slowly bring yourself to the ground, legs and arms out, and your head under your shoulders in the child's pose."
+
+    "You then stretch yourself out and bring your body up to a plank, and slowly drop and bend forward in a cobra - carefully breathing in and out with each calculated movement."
+
+    "From the cobra, you stretch your arms out and bend backwards into the downward dog."
+
+    "As you bring your feet forward and stretch your body into a standing position, you notice someone has been standing at the gym door staring at you the entire time."
+
+    "You sit down quickly, thinking he might have stared at your posterior."
+
+    u "Don't mind me."
+
+    "He grabs a yoga mat and rolls it out across the room."
+
+    "He then takes off his shoes and eases into a headstand."
+
+    "You look him up and down and see that he's dressed like some sort of Spanish soap opera heartthrob with a silk button down shirt."
+
+    "He's clearly not dressed for a workout, but he seems to know what he's doing, so you let it slide."
+
+    "You repeat your sun salutation again, working your way back into a plank."
+
+    "You keep breathing in and out as you feel your muscles releasing the tension in your body."
+
+    "As you bend down into a cobra, you see the guy doing a bent-down version of the Tree Pose, his hands folded as if in prayer while standing on his right foot."
+
+    "He breathes loudly as he bends even further, pushing his behind even further up."
+
+    "Creeped out, you get up and start walking out of the gym without rolling your mat back up."
+
+    jump weird
 
 label weird:
 
-    # This ends the game.
-    r "The game is over."
+    "You rack your brain wondering what the hell happened in the guym as you storm out of the double doors."
 
-    return
+    "You turn a corner and run into Bea, Mikey, and Robin."
+
+    r "Oh hey dude. Why do you look so spooked?"
+
+    p "Oh, I just ran into some pervert at the gym."
+
+    "You think about the encounter and shudder."
+
+    m "Whoa, really? Should we report them?"
+
+    p "No, no, it's no big deal. He was just some weirdo, I think I'll be fine."
+
+    b "You sure? You can't be too careful."
+
+    p "I'm fine, really."
+
+    p "So, uh...what's you guy's next class?"
+
+    b "All three of us are heading to the Power class. You're headed there too?"
+
+    p "Yeah."
+
+    r "Cool, let's sit together again."
+
+    "Robin fist bumps you and you all walk to class."
+
+    jump power
 
 label power:
 
-    # This ends the game.
-    r "The game is over."
+    "All four of you walk into a dojo-style classroom complete with multi colored padded floors."
+
+    "Robin's eyes light up."
+
+    "At the front of the class with a few students is the sensei, a tall, tan, big, bald man, already showing off some basic karate forms."
+
+    "As you all file in front of him on your own mats, he begins addressing you all."
+
+    pr "Good morning class. This is the Freshman Power 101 course."
+
+    pr "I will be your sensei for this term."
+
+    pr "My name is Dr. William Blanks. But you can call me Willy."
+
+    w "I already see that some of you may have already taken karate classes in the past, but I will let you know that in this class, you will work harder than you ever have before."
+
+    w "Before we get started, I just want to show you some of my work, so that you get an idea of where I'm coming from."
+
+    "Willy goes into a closet, wheels out an old TV, and pops in a VHS tape."
+
+    "The video is a montage of mashed up backyard home video footage of a younger, hairer Willy performing all sorts of karate stunts, some shots from some professional tournaments he took place in and some shots of him training some younger fighters,"
+
+    "all set to 80s music."
+
+    "You feel like maybe it went on for a bit too long, but Robin seems to be enjoying [herself] quite a bit."
+
+    "The tape ends and Billy turns the light back on."
+
+    w "Alright, any questions? Let's begin."
+
+    "A couple of students raise their hands, but Willy puts them into groups as the lesson begins."
+
+    "As the session dies down and you all start to head out, Robin approaches you."
+
+    r "Hey, I'm gonna stick around here a bit to talk to the professor."
+
+    r "I'll catch up with you guys."
+
+    "Robin runs over to Willy."
+
+    m "Man, I'm gonna have to do some major stretching after that or else I'm gonna be hella sore tomorrow."
+
+    "Mikey twists his back a bit."
+
+    b "Wasn't that bad. I'm pretty hype to see what we do next."
+
+    "Bea pulls out her cellphone and sighs."
+
+    b "My parents want me over for dinner in a bit. Sorry, I'll see you guys tomorrow."
+
+    m "See ya, Bea."
+
+    m "Let's start walking I guess, Robin might be there for a while."
+
+    "You and Mikey start walking towards your dorms."
+
+    m "I can't believe you had no idea who our Principal was!"
+
+    m "He was this super famous wrestler back in the 90s."
+
+    p "I thought he looked familiar. Is he really THE Drew \"The Boulder\" Jackson?"
+
+    m "Yea, he like, kinda disappeared from Pro Wrestling for a bit."
+
+    m "I guess he was getting SMAC established."
+
+    m "Pretty cool though, that someone that famous decided to just open up a school for people like us."
+
+    m "Anyway, my room's that way."
+
+    "Mikey stretches and yawns."
+
+    m "I'm pretty beat, I'll probably just stay in for the rest of the night. See you tomorrow?"
+
+    p "Yeah, see ya."
+
+    "You wave at Mikey as he turns a corner."
+
+    "You walk towards your room."
+
+    "Feeling pretty drained, you begin heading over to your dorm as Robin catches up with you."
+
+    r "Hey! Heading home?"
+
+    p "Yup. Pretty tired."
+
+    r "Looks like we're headed the same way. Might be neighbors!"
+
+    "Robin starts walking beside you."
+
+    "You arrive at your door."
+
+    p "This is me-" (multiple=2)
+
+    r "This is me-" (multiple=2)
+
+    r "Roomies! This is gonna be great!"
+
+    menu:
+        "It's been a while since you've had a roommate.":
+            p "I used to split rent with some people a while back. It was kinda...eh."
+
+            p "Lots of passive-aggressiveness and post-it-notes."
+
+            r "Don't worry, I'll try not to be an asshole, hah."
+
+            r "I promise I won't eat your leftovers and stuff."
+
+            p "Thanks."
+
+            jump yourroom
+
+        "You and your sibling haven't shared a room since you were kids.":
+
+            p "My [sister] and I used to share a room as kids."
+
+            p "It's been a while since then, but it could be nice to have a roommate again."
+
+            r "I think it'll be fun."
+
+            r "We'll get to see each other more often at least, get to know each other a bit more."
+
+            r "I'm pretty excited about it."
+
+            "Robin hops onto [her] bed."
+
+            jump yourroom
+
+        "You've lived alone for most of your life.":
+
+            p "I haven't really shared a room with anyone before."
+
+            p "Just kinda had my own space for the most part."
+
+            "You trail off."
+
+            r "Don't worry, I'll try to give you as much space as you need."
+
+            p "No worries, I think it'll be fun. It can kind of be lonely sometimes, so I've been looking forward to rooming with someone actually!"
+
+            r "I'm sure we'll get along fine then."
+
+            jump yourroom
+
+label yourroom:
+
+    "As you both finish unpacking things and organizing your respective sides, Robin springs out of [her] bed and starts putting on [her] shoes."
+
+    r "Wanna go grab some dinner?"
+
+    "[She] helps you put up your mirror."
+
+    p "I could eat."
+
+    r "Cool. I texted Mikey to see if he wanted to join, but he didn't respond."
+
+    "Robin taps on [her] phone, frowning."
+
+    p "Yeah, I think he's asleep. Bea's with her parents."
+
+    r "Ah, I guess it's just the two of us then."
+
+    "Robin holds open the door for you."
+
+    r "Lead the way."
+
+    "You turn off the lights and begin walking towards the cafeteria."
+
+    "The cold night breeze cools your face as you and Robin have dinner."
+
+    "The dining pavillion isn't nearly as active as it was during lunch time, so you're able to have a nice conversation with [her]."
+
+    "After dinner, you return back to your room."
+
+    "You brush your teeth and get ready for bed."
+
+    "Robin comes out of the shower and begins doing crunches."
+
+    r "Just because we're roommates doesn't mean that I won't put the hurt on you."
+
+    "Robin finishes [her] crunches and starts doing pushups."
+
+    p "Huh?"
+
+    if(have_experience == True):
+
+        r "We might be best friends, but we're still competing against each other."
+
+        r "That goes for everyone else here too."
+
+        p "Where did this come from?"
+
+        "You chuckle."
+
+    else:
+
+        r "I've just been thinking. You seem like you could be a good friend, but you could also be a formidable opponent."
+
+    r "I don't want to let my feelings get in the way of my success."
+
+    p "Your feelings?"
+
+    r "I mean, our relationship."
+
+    "Robin stops mid push up."
+
+    r "As roommates!"
+
+    "[She] resumes."
+
+    p "Right."
+
+    r "So. We can still be friendly with each other. But just don't lose sight of what we're here for."
+
+    r "So consider us...rivals."
+
+    p "Heh."
+
+    "Your competitive spirit sparks a bit. You make a little promise to yourself that you'll begin working a bit harder, and try to compete with Robin."
+
+    p "Alright. This is gonna be interesting."
+
+    "Robin wraps up [her] workout and begins to stretch, before [she] puts in [her] retainer and hops onto bed."
+
+    r "The sunrise brings with it another battle. Rest up."
+
+    "[She] shuts [her] lamp off."
+
+    p "Night, Robin. See you tomorrow."
+
+    "For the first time since you've got here, you felt a twinge of warmth in your heart."
+
+    "It felt nice to be sharing a room with someone who sees you as an equal."
+
+    "You think about the semester you have ahead of you and the other people you will meet as you drift into sleep."
+
+    scene black with dissolve
+
+    show text "End of Demo" with Pause(3.5)
+
+    scene black with dissolve
 
     return
