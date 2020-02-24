@@ -2,9 +2,25 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 83: expected statement.
-    have_experience = True
-                    ^
+File "game/script.rpy", line 71: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation.
+    $ quick_menu = True
+    ^
+
+File "game/script.rpy", line 510: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    $ quick_menu = False
+    ^
+
+File "game/script.rpy", line 528: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation.
+    $ quick_menu = True
+    ^
+
+File "game/script.rpy", line 1341: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    $ quick_menu = False
+    ^
+
+File "game/script.rpy", line 1349: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation.
+    $ quick_menu = True
+    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Feb 05 03:05:38 2020
+Sun Feb 23 19:47:55 2020

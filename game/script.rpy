@@ -2,7 +2,16 @@
 
 
 #Images go here
+image robin = "../game/images/Rob.png"
+image bea = "../game/images/Bee.png"
+image jules = "../game/images/Jules.png"
+image drlove = "../game/images/Love.png"
+image paul = "../game/images/paul.png"
+image mikey = "../game/images/Soap.png"
 
+image defense = "../game/images/defense101gym.jpg"
+image power = "../game/images/power101dojo.jpg"
+image paulogym = "../game/images/paulogym.jpg"
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -54,6 +63,8 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
+    $ quick_menu = False
+
     scene black with dissolve
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -65,6 +76,10 @@ label start:
     scene black with dissolve
 
     scene Prologue
+
+    $ quick_menu = True
+
+    show power
 
     "You're laying flat on your back in a pool of your own sweat."
 
@@ -162,7 +177,7 @@ label continue1:
             $ herself = "themself"
             $ sister = "sibling"
 
-    lady "Nice to meet you, %(p)s!" #you can delete this whenever
+    #lady "Nice to meet you, %(p)s!" #you can delete this whenever
 
     "After filling out some paperwork including your blood type, allergies, and other medical info, the helper"
 
@@ -233,6 +248,8 @@ label meetboxer:
 
     "There are a few chairs surrounding the ring as well as a blackboard on wheels and other training gear."
 
+    show jules
+
     "On the far side of the room you see a tall, extremely ripped person with buzzed blonde hair just laying into a training dummy."
 
     "A jab! A hook! An uppercut!"
@@ -260,6 +277,8 @@ label meetboxer:
     "The boxer glares at you again, then the dummy head, and back at you."
 
     "You get the message and decide that you've done enough exploring for the day and make your way over to the auditorium."
+
+    hide jules
 
     jump orientation
 
@@ -298,6 +317,8 @@ label beapath:
 
     "You catch yourself thinking she looks too cute for a fighting school, but you ignore the thought as she approaches you."
 
+    show bea
+
     b "Hi there! I'm Bea, nice to meet ya!"
 
     "She smiles and extends a hand."
@@ -315,6 +336,8 @@ label beapath:
     b "I'll try not to be too rowdy at night."
 
     b "See ya later!"
+
+    hide bea
 
     "She pats you on the shoulder and walks into her room."
 
@@ -360,6 +383,8 @@ label orientation:
 
     "You looked around for a space to sit when someone in the crowd waved in your direction."
 
+    show robin
+
     r "Hey!"
 
     "A young [woman] in a full karate gi yelled across the gym and called you over."
@@ -404,6 +429,8 @@ label orientation:
 
             "You sit with Robin as the squeal of a microphone cuts through the chatter."
 
+
+    hide robin
 
     "An extremely tall, unbelievably muscular bald man in a SMAC polo shirt taps on a mic and paces as he addresses the room."
 
@@ -501,6 +528,8 @@ label orientation:
 
     "You black out instantly and the last thing you remember is a pair of strong hands tugging on your shoulders gently as you are lifted onto a stretcher and wheeled away."
 
+    $ quick_menu = False
+
     scene black with dissolve
 
     show text "End Prologue" with Pause(3.5)
@@ -516,6 +545,8 @@ label orientation:
     scene black with dissolve
 
     scene Day One
+
+    $ quick_menu = True
 
     "You wake up in a cold room."
 
@@ -1328,10 +1359,14 @@ label yourroom:
 
     "You think about the semester you have ahead of you and the other people you will meet as you drift into sleep."
 
+    $ quick_menu = False
+
     scene black with dissolve
 
     show text "End of Demo" with Pause(3.5)
 
     scene black with dissolve
+
+    $ quick_menu = True
 
     return
